@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Bus Ticketing</title>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/37107b0423.js" crossorigin="anonymous"></script>
     <!-- daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -175,7 +177,7 @@
          
 
             <!--1st div - route & per ticket price -->
-            <div class="bg-white flex flex-row justify-between mx-32 rounded-3xl">
+            <div class="bg-white flex flex-row justify-between mx-28 rounded-3xl">
               <!-- route name & available seats -->
               <div>
                 <div class="flex flex-row ms-3">
@@ -183,7 +185,7 @@
                     <img  src="images/bus-logo.png" alt="">
                     <div>
                       <div class="stat-value text-3xl">Greenline Paribahan</div>
-                      <div class="stat-desc font-bold">Coach-009-WEB ! AC_Business</div>
+                      <div class="stat-desc font-bold text-[#03071299]">Coach-009-WEB ! AC_Business</div>
                     </div>
                     
                   </div>
@@ -194,36 +196,75 @@
                  
                 </div>
                 
-                  <div class="p-7 m-9 rounded-xl bg-[#F7F8F8]">
-                    <div class="flex flex-row justify-between">
+                  <div class="p-7 m-10 rounded-xl bg-[#F7F8F8] text-[#03071299]">
+                    <div class="flex flex-row justify-between border-b-2 border-dashed pb-4">
                       <h1>Route</h1>
                       <h1>Dhaka-Chittagong</h1>
                     </div>
-                    <hr class="">
-                    <div class="flex flex-row justify-between">
+                    
+                    <div class="flex flex-row justify-between border-b-2 border-dashed pb-4">
                       <h1>Departure Time</h1>
                       <h1>9.00 pm</h1>
                     </div>
-                    <div>
-                      <button class="btn">Boarding Point - Laxmipur</button>
-                      <button class="btn">Dropping Point - Bogura</button>
-                      <button class="btn">Est. Time - 11 Hour</button>
+                    <div class="pt-4 ">
+                      <button class="btn text-[#03071299]">Boarding Point - Laxmipur</button>
+                      <button class="btn text-[#03071299]">Dropping Point - Bogura</button>
+                      <button class="btn text-[#03071299]">Est. Time - 11 Hour</button>
                     </div>
                   </div>
                 
               </div>
 
               <!-- divider -->
-               <img src="images/info-devider.png" alt="">
+               <img class="" src="images/info-devider.png" alt="">
                <!-- per ticket price -->
-              <div>
-                <h1>550 Taka</h1>
-              </div>
+              <div class="flex flex-col justify-center pr-8">
+                <div class="stat text-center">
+                  <img class="ms-12" src="images/fare.png" alt="">
+                  <div>
+                    <div class="stat-value">550 Taka</div>
+                    <div class="stat-desc font-bold text-xl">Per seat</div>
+                  </div>
+                  
+                </div>
+            </div>
       
       </div>
            
             <!--2nd div- select seats & buy ticket -->
-            <div></div>
+            <div class="bg-white flex flex-row justify-between mx-28 rounded-3xl mt-8">
+              <!-- select your seat -->
+               <div class="w-full p-8">
+                <!-- select seat heading -->
+                 <div  >
+                  
+                    <h1 class="border-b border-dashed pb-4">Select your seat</h1>
+                  
+                  <div class="flex justify-between border-b border-dashed pb-6 ">
+                  
+                      <p class="flex mt-7"><img class="me-2" src="images/seat-gray.png" alt="">available</p>
+                   
+                      <p class="flex mt-7"><img class="me-2" src="images/seat-green-filled.png" alt="">selected</p>
+                  </div>
+                  <div class="pt-6 flex justify-end">
+                    <button class="btn"><img class="px-4" src="images/tabler-icon-steering-wheel.png" alt=""></button>
+                  </div>
+                 </div>
+                 
+                  
+                  
+                
+                
+
+               </div>
+              
+               
+               <!--Buy tickets -->
+
+               <div class="border-s-2 border-dashed">
+                <h1>Takatjjjjjjjjjjjjdsjewutr53edwsy54u</h1>
+               </div>
+            </div>
 
         </section>
         
