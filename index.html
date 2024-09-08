@@ -89,7 +89,7 @@
       
     </div>
   </div>
-  <div class="stats border items-center border-b-4 border-[#1DD100]">
+  <div class="stats  items-center border-b-4 border-[#1DD100]">
     <div class="stat flex flex-row">
       <img  src="images/ticket-cupon.png" alt="">
       <div>
@@ -99,7 +99,7 @@
       
     </div>
   </div>
-  <div class="stats border items-center border-b-4 border-[#1DD100]">
+  <div class="stats  items-center border-b-4 border-[#1DD100]">
     <div class="stat flex flex-row">
       <img  src="images/stoppage.png" alt="">
       <div>
@@ -191,7 +191,7 @@
                   </div>
                   <!-- available seats -->
                   
-                    <button class="btn mt-7"><img src="images/seat-green.png" alt=""><span>40</span>Seats Left</button>
+                    <button class="btn  mt-7 font-inter"><img src="images/seat-green.png" alt=""><span>40</span>Seats Left</button>
                   
                  
                 </div>
@@ -247,7 +247,7 @@
                       <p class="flex mt-7"><img class="me-2" src="images/seat-green-filled.png" alt="">selected</p>
                   </div>
                   <div class="pt-6 flex justify-end">
-                    <button class="btn bg-[#0307121A]"><img class="px-3" src="images/tabler-icon-steering-wheel.png" alt=""></button>
+                    <button class="btn bg-[#0307121A]"><img class="px-3 " src="images/tabler-icon-steering-wheel.png" alt=""></button>
                   </div>
                  </div>
                  <!-- select seatnumber -->
@@ -360,13 +360,15 @@
                <div class="border-s-2 border-dashed p-8 w-2/5">
                 <h1 class="border-b border-dashed pb-4 ">Select your seat</h1>
                 <!-- ticket price calculation -->
-                 <div class="mt-7 bg-[#F7F8F8] rounded-xl">
-                  <div class="grid grid-cols-3 gap-4 pt-2 ps-4 border-b border-dashed pb-4 ">
-                    <h2 class="text-sm font-semibold">Seat</h2>
+                 <div class="mt-7 bg-[#F7F8F8] rounded-xl font-inter">
+                  <div class="flex justify-evenly p-2  border-b border-dashed pb-4 ">
+                    <h2 class="text-sm font-semibold">Seat
+                      <div class="badge bg-black text-white h-3 w-5 text-xs border-none">2</div>
+                    </h2>
                     <h2 class="text-sm font-semibold ">Class</h2>
                     <h2 class="text-sm font-semibold">Price</h2>
                   </div>
-                  <div class="grid grid-cols-3 gap-4 pt-2 ps-4 text-[#03071299] pb-4">
+                  <div class="grid grid-cols-3 gap-4 pt-2 ps-16 text-[#03071299] pb-4 border-b border-dashed">
                     <h2 class="text-sm font-semibold">C2</h2>
                     <h2 class="text-sm font-semibold">Economy</h2>
                     <h2 class="text-sm font-semibold">550</h2>
@@ -374,20 +376,92 @@
                     <h2 class="text-sm font-semibold">Economy</h2>
                     <h2 class="text-sm font-semibold">550</h2>
                   </div>
-                  <div class="flex justify-between border-b border-dashed p-4">
+                  <div class="flex justify-between border-b border-dashed p-4 px-14">
                     <h2 class="text-sm font-semibold">Total Price</h2>
-                    <h2 class="text-sm font-semibold ">BDT<span>1100</span></h2>
+                    <h2 class="text-sm font-semibold ">BDT<span class="ps-1">1100</span></h2>
+                  </div>
+                  <div class="m-5">
+                  
+                   <label class="input input-bordered flex items-center gap-2 ">
+                    <input type="text" class="grow py-8" placeholder="Have any coupon?" disabled/>
+                    
+                    <button class=" bg-[#1DD100] text-white py-2 rounded-md px-2 text-sm font-semibold" >Apply</button>
+                  </label>
+                  </div>
+
+                  <div class="flex justify-between  p-4 px-14">
+                    <h2 class="text-sm font-semibold">Grand Total</h2>
+                    <h2 class="text-sm font-semibold ">BDT<span class="ps-2">1100</span></h2>
                   </div>
                  </div>
-               </div>
+                  <div class="pt-5 pb-4"> 
+                  <label class=" max-w-xs ">
+                    <div class="label ">
+                      <span class="label-text required font-bold text-base">Passenger Name</span>
+                     
+                    </div>
+                    <input type="text" placeholder="Enter your name" class=" input input-bordered w-full  mb-3" required />
+                    <div class="label ">
+                      <span class="label-text required font-bold text-base">Phone Number</span>
+                     
+                    </div>
+                    <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full  mb-3" required />
+                    <div class="label ">
+                      <span class="label-text required font-bold text-base">Email ID</span>
+                     
+                    </div>
+                    <input type="text" placeholder="Enter your email id" class="input input-bordered w-full  mb-3 " required />
+                   
+                  </label>
+                 </div>
+                 <button class="btn btn-block rounded-xl border-none bg-[#1DD100] text-white">Next</button>
+                 <div class="flex justify-between pt-5">
+                  <a class="underline text-[#03071299]" href="">Terms and Conditions</a>
+                  <a class="underline text-[#03071299]" href="">Cancellation Policy</a>
+                 </div>
+              </div>
             </div>
 
+             <!-- footer section -->
+    <footer class="pt-14">
+      <footer class="footer bg-black text-neutral-content p-10 flex flex-col">
+        <div class="flex justify-between border-b border-dashed p-8 w-full ">
+          <aside>
+            <h1 class="text-3xl font-extrabold pb-3">P-Ticket</h1>
+             
+            <p>
+              P-Ticket is a digital platform to make your
+              <br />
+              daily commuting better.
+            </p>
+          </aside>
+          <nav>
+            <h6 class="footer-title pb-3">Download our app</h6>
+            <div>
+             <img class="w-4/6 " src="images/GetItOnGooglePlay_Badge_Web_color_English.png" alt="">
+            </div>
+          </nav>
+        </div>
+
+        <div class="flex justify-between w-full px-5">
+          <div>
+            <h1 >@all rights reserved, P-Ticket services limited.2024</h1>
+          </div>
+          <div class="flex justify-evenly gap-5">
+            <h1>Terms & condition</h1>
+            <h1 class="">Return & refund policy</h1>
+            <h1>Privacy policy</h1>
+          </div>
+        </div>
+       
+       
+      </footer>
+    </footer>
+       
+            
         </section>
         
     </main>
-    <!-- footer section -->
-    <footer>
-
-    </footer>
+   
 </body>
 </html>
